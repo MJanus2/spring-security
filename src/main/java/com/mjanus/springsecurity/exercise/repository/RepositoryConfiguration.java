@@ -1,4 +1,4 @@
-package com.mjanus.practice.repository;
+package com.mjanus.springsecurity.exercise.repository;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 class RepositoryConfiguration {
 
     @Bean
-    BookRepository repository() {
-        return new InMemoryBookRepository();
+    MovieRepository repository() {
+        return new InMemoryMovieRepository();
     }
 
 }
